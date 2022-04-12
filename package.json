@@ -1,0 +1,26 @@
+{
+  "name": "java-api-compliance-action",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A action to check that Java api/abi changes are backwards compatible",
+  "main": "main.ts",
+  "keywords": [
+    "github action"
+  ],
+  "scripts": {
+    "build": "ncc build main.ts --license licenses.txt"
+  },
+  "author": "Vankka",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/cache": "^2.0.2",
+    "@actions/core": "^1.2.7",
+    "@actions/github": "^5.0.1",
+    "glob": "^7.2.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.28.5",
+    "eslint": "^7.26.0",
+    "typescript": "^4.6.3"
+  }
+}
